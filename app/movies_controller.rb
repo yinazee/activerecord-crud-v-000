@@ -77,6 +77,7 @@ def can_update_using_update_method
 end
 
 def can_update_multiple_items_at_once
+  binding.pry
   # Change title of all movies to "A Movie"
   5.times do |i|
     Movie.create(title: "Movie_#{i}", release_date: 2000+i)
